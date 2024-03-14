@@ -11,12 +11,18 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance {  get { return instance; } }
     public DialogueRunner dialogueSys {  get { return dialogueRunner; } }
+    public InMemoryVariableStorage VariableStorage { get {  return variableStorage; } }
+
+    public SceneManagment getSceneManagment() { return sceneManagment; }
+
+    SceneManagment sceneManagment;
 
     private void Awake()
     {
         if(instance == null)
         {
             instance = this;
+           
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -29,6 +35,11 @@ public class GameManager : MonoBehaviour
     {
         this.dialogueRunner = dialogueRunner;
         this.variableStorage = variableStorage;
+    }
+
+    public void createSceneManagment(SceneManagment scene)
+    {
+        this.sceneManagment = scene;
     }
 
 

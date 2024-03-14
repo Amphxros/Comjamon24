@@ -8,20 +8,18 @@ public class ComunicationDialogueRunnerToGameManager : ICommunicator {
     private DialogueRunner dialogueRunner;
     private InMemoryVariableStorage memVar;
         
-    void Start()
+    void Awake()
     { 
         dialogueRunner= GetComponent<DialogueRunner>();  
         memVar= GetComponent<InMemoryVariableStorage>();
+        this.transform.parent = GameManager.Instance.gameObject.transform;
         Communicate();
     }
     public override void Communicate()
     {
-        if(dialogueRunner != null)
-        {
             GameManager.Instance.setDialogueManager(dialogueRunner, memVar);
-            DontDestroyOnLoad(this.gameObject);
             Destroy(this);
-        }
+        
     }
 
 }
