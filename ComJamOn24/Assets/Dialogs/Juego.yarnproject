@@ -1,7 +1,7 @@
-﻿{
+{
   "projectFileVersion": 2,
   "sourceFiles": [
-    "**/*.yarn"
+    "Introduccion.yarn"
   ],
   "excludeFiles": [],
   "localisation": {},
