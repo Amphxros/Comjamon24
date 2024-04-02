@@ -1,0 +1,76 @@
+{
+    "name": "Global_Controls",
+    "maps": [
+        {
+            "name": "Global",
+            "id": "015e14dd-d652-4cfe-97bf-76f9f232a807",
+            "actions": [
+                {
+                    "name": "SpawnPlayer",
+                    "type": "Button",
+                    "id": "d7c21818-d581-4f8b-a144-77abfc568c0b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "StartMission",
+                    "type": "Button",
+                    "id": "ae0af5ae-0c68-4388-a0a9-c6e84cd4cac1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f1a4e447-c263-4d5e-9c3f-01573d3c3c4d",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2c7f3dfb-43ff-4abc-96a8-e2c235b9ef47",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83c958ea-174a-407e-9c76-7f436026aff0",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StartMission",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c943c99f-bbca-450c-a5bc-22cca7822d78",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StartMission",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
